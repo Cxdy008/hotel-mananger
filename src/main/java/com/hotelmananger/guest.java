@@ -4,8 +4,8 @@ import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
 public class guest {
-    String name;
-    String email;
-    String phone;
-    String address;
+    private String name;
+    private String email;
+    private String phone;
+    private String address;
 }
