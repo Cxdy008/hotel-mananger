@@ -1,19 +1,21 @@
-<persistence xmlns="http://jakarta.ee/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-             xsi:schemaLocation="http://jakarta.ee/xml/ns/persistence " >
-    version="3.0">
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
     <persistence-unit name="hotelPU">
-        <class>com.exemplo.model.Usuario</class>
+        <class>com.hotelmananger.Guest</class>
+        <class>com.hotelmananger.Reserve</class>
+        <class>com.hotelmananger.Room</class>
 
         <properties>
             <!-- JDBC -->
-            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
-            <property name="jakarta.persistence.jdbc.url"
-                      value="jdbc:mysql://localhost:3310/hotelmananger?useSSL=false&amp;serverTimezone=UTC"/>
-            <property name="jakarta.persistence.jdbc.user" value="myser"/>
-            <property name="jakarta.persistence.jdbc.password" value="password2025"/>
+            <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/mydatabase"/>
+            <property name="jakarta.persistence.jdbc.user" value="myuser"/>
+            <property name="jakarta.persistence.jdbc.password" value="mypassword"/>
 
             <!-- Hibernate -->
-            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
             <property name="hibernate.hbm2ddl.auto" value="update"/>
             <property name="hibernate.show_sql" value="true"/>
         </properties>
