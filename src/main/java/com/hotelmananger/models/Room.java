@@ -1,6 +1,5 @@
-package com.hotelmananger;
+package com.hotelmananger.models;
 
-import jakarta.persistence.Entity;
 import lombok.Data;
 
 //@Entity

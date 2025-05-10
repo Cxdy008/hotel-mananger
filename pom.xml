@@ -51,7 +51,7 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- MySQL Driver-->
+        <!-- Postgre Driver-->
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>

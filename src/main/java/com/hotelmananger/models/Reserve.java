@@ -1,8 +1,5 @@
-package com.hotelmananger;
+package com.hotelmananger.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
 import lombok.Data;
 
 import java.util.UUID;

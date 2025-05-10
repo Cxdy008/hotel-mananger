@@ -3,9 +3,9 @@
              xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
              version="3.0">
     <persistence-unit name="hotelPU">
-        <class>com.hotelmananger.Guest</class>
-        <class>com.hotelmananger.Reserve</class>
-        <class>com.hotelmananger.Room</class>
+        <class>com.hotelmananger.models.Guest</class>
+        <class>com.hotelmananger.models.Reserve</class>
+        <class>com.hotelmananger.models.Room</class>
 
         <properties>
             <!-- JDBC -->
